@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Noto+Sans+JP:wght@300&display=swap');
+
+/* variáveis cores */
+:root{
+    --pink: #9A275A;
+    --pink-shadow: #FAAECF;
+    --green: #475841;
+    --light-green: #7EB09B;
+    --not-white: #EEE5E9;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--green);
+}
+
+h1,h2 {
+    margin: 0;
+}
+
+body, input, select, textarea {
+    font-family: 'Lora', serif;
+    color: var(--not-white);
+}
+
+button {
+    background: var(--not-white);
+    border: 0;
+    border-radius: 10px;
+    padding: 8px 35px;
+    color: #9A275A;
+    font-size: 20px;
+}
+
+header {
+    /* background: #9A275A; */
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+/* font weight: gordura da fonte */
+header .container h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 90px;
+}
+
+nav ul a {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    color: var(--not-white);
+    text-decoration: none;
+    margin: 0 35px;
+}
