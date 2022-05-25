@@ -49,6 +49,10 @@ header .container {
     padding: 0 100px;
 }
 
+header .container img{
+    display: none;
+}
+
 header .container h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -81,4 +85,39 @@ nav ul a {
     color: var(--not-white);
     text-decoration: none;
     margin: 0 35px;
+}
+
+@media (max-width: 767px) {
+    header .container {
+        width: 100%;
+    }
+
+    header .container img {
+        display: inline;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+
+    nav img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header .container {
+        padding: 0 40px
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
 }
