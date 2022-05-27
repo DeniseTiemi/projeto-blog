@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css.css">
     <title>Projeto blog</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="assets/Logo.png" alt="Logo">
+            <img src="Logo.png" alt="Logo">
             <h1>Olá, meu nome é Denise</h1>
             <h2>デニゼ 知恵美 三浦</h2>
             <p>Sou estudante na área de informática há 2 anos e possuo grande interesse em Design. 
@@ -18,14 +19,16 @@
                 Gosto de aprender coisas novas e de desafios.
             </p>
 
-            <button>Contato</button>
-            <button>E-mail</button>
-            <button>Instagram</button>
+            <div class="buttons">
+                <button><i data-feather="phone"></i>Contato</button>
+                <button><i data-feather="mail"></i>E-mail</button>
+                <button><i data-feather="instagram"></i>Instagram</button>
+            </div>
         </div>
     </header>
 
     <nav>
-        <img src="assets/Logo.png" alt="Logo">
+        <img src="Logo.png" alt="Logo">
         <ul>
             <a href="">Sobre mim</a>
             <a href="">Serviços</a>
@@ -34,5 +37,27 @@
             <a href="">Contato</a>
         </ul>
     </nav>
+
+    <section class="about-me">
+        <img src="photo2.png" alt="Foto">
+        <div class="container">
+            <h3>Sobre mim</h3>
+            <p>
+                Meu nome é Denise Tiemi Miura e sou estudante do último ano no 
+                Instituto Federal do Paraná - Campus Cascavel e estou cursando 
+                Técnico em Informática. Possuo conhecimento iniciante em Python, 
+                HTML e CSS. Além disso, já participei em olimpíadas como IphCo e 
+                Obmep e em eventos na área da robótica.
+                Tenho grande interesse na área de Design e Ilustração e pretendo 
+                me especializar no futuro. Possuo experiência em softwares como Canva,
+                 Gimp e Figma.
+                Sou muito criativa e adoro aprender coisas novas em diversas áreas.  
+            </p>
+        </div>
+    </section>
+
+    <script>
+        feather.replace()
+      </script>
 </body>
 </html>
