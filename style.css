@@ -107,7 +107,7 @@ nav ul a {
         margin-bottom: 20px;
     }
 
-    nav img {
+    nav img .logo{
         display: none;
     }
 }
@@ -145,3 +145,40 @@ h3{
     width: 50%;
     padding-right: 50px;
 }
+
+.about-me .img-container{
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img{
+    width: 70%;
+    height: 100%;
+    border: 10px solid var(--light-green);
+    background-color: #7EB09B;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.5);
+}
+
+/* .bloco{
+    position: absolute;
+    width: 74%;
+    height: 104%;
+    background: #7EB09B;
+
+    top: -15px;
+    left: calc(50% - 70%/2 - 15px);
+    z-index: -1;
+} */
+
+/* .about-me .img-container .line{
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    width: 74%;
+    height: 105%;
+    border: 10px solid var(--light-green);
+
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 70%/2 - 15px);
+} */
