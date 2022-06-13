@@ -13,20 +13,37 @@
     box-sizing: border-box;
 }
 
+/* fundo */
 html, body {
     margin: 0;
     background: var(--green);
 }
 
+/* margem "olá" e japonês */
 h1,h2 {
     margin: 0;
 }
 
+/* fonte corpo */
 body, input, select, textarea {
     font-family: 'Lora', serif;
     color: var(--not-white);
 }
 
+/* fonte título */
+header .container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+/* font weight: gordura da fonte */
+header .container h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* contato email instagram */
 button {
     position: relative;
     background: var(--not-white);
@@ -38,6 +55,7 @@ button {
     font-size: 20px;
 }
 
+/* icons botões */
 header .container button svg{
     position: absolute;
     color: #9A275A;
@@ -45,6 +63,7 @@ header .container button svg{
     left: 11px;
 }
 
+/* parte 1 */
 header {
     /* background: #9A275A; */
     height: calc(100vh - 65px);
@@ -58,22 +77,12 @@ header .container {
     padding: 0 100px;
 }
 
-header .container img{
+/* responsividade logo */
+header .container .logo{
     display: none;
 }
 
-header .container h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-}
-
-/* font weight: gordura da fonte */
-header .container h2 {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-}
-
+/* menu */
 nav {
     display: flex;
     align-items: center;
@@ -101,7 +110,7 @@ nav ul a {
         width: 100%;
     }
 
-    header .container img {
+    header .container .logo {
         display: inline;
         height: 45px;
         margin-bottom: 20px;
@@ -160,25 +169,3 @@ h3{
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.5);
 }
 
-/* .bloco{
-    position: absolute;
-    width: 74%;
-    height: 104%;
-    background: #7EB09B;
-
-    top: -15px;
-    left: calc(50% - 70%/2 - 15px);
-    z-index: -1;
-} */
-
-/* .about-me .img-container .line{
-    width: calc(70% + 50px);
-    height: calc(100% + 50px);
-    width: 74%;
-    height: 105%;
-    border: 10px solid var(--light-green);
-
-    position: absolute;
-    top: -15px;
-    left: calc(50% - 70%/2 - 15px);
-} */
