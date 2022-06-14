@@ -202,6 +202,7 @@ nav ul a {
     padding: 54px 25px 0 25px;
     z-index: 7;
     text-shadow: 1px 1px 3px black;
+    color: var(--not-white)
 }
 
 /* portfolio */
