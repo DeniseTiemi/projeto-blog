@@ -20,7 +20,7 @@ html, body {
 }
 
 /* margem "olá" e japonês */
-h1,h2 {
+.title,.japones {
     margin: 0;
 }
 
@@ -28,19 +28,26 @@ h1,h2 {
 body, input, select, textarea {
     font-family: 'Lora', serif;
     color: var(--not-white);
+    text-align: justify;
 }
 
 /* fonte título */
-header .container h1 {
+.title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 38px;
+    text-shadow: 1px 1px 7px var(--pink);
+}
+
+header .container .title{
+    text-align: center;
 }
 
 /* font weight: gordura da fonte */
-header .container h2 {
+header .container .japones {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 300;
+    text-align: center;
 }
 
 /* contato email instagram */
@@ -82,6 +89,12 @@ header .container .logo{
     display: none;
 }
 
+.foto{
+    border: 10px solid var(--light-green);
+    background-color: #7EB09B;
+    box-shadow: 0 15px 15px 0 rgba(0,0,0,0.5);
+}
+
 /* menu */
 nav {
     display: flex;
@@ -105,6 +118,159 @@ nav ul a {
     margin: 0 35px;
 }
 
+/* about me */
+.about-me{
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container{
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container .title svg{
+    position: relative;
+    color: var(--pink);
+    filter: drop-shadow(1px 1px 3px var(--pink-shadow));
+    height: 40px;
+    width: 40px;
+    left: 180px;
+    top: 10px;
+}
+
+.about-me .img-container{
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img{
+    width: 70%;
+    height: 100%;
+    border: 10px solid var(--light-green);
+    background-color: #7EB09B;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.5);
+}
+
+/* serviços */
+.servicos{
+    position: relative;
+    height: calc(100vh - 65px);
+}
+
+.servicos .title{
+    text-align: center;
+}
+
+.servicos div{
+    position: absolute;
+    height: 354px;
+    width: 290px;
+    background: var(--pink);
+    opacity: 0.5;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.5);
+    top: 80px;
+}
+
+.servicos .design{
+    left: calc(25% - 145px);
+}
+
+.servicos .programa{
+    left: calc(50% - 145px);
+}
+
+.servicos .sites{
+    left: calc(75% - 145px);
+}
+
+.servicos svg{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    color: var(--light-green);
+    top: 54px;
+    left: 20px;
+    opacity: 0.5;
+}
+
+.servicos .text{
+    position: absolute;
+    font-size: 23px;
+    padding: 54px 25px 0 25px;
+    z-index: 7;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* portfolio */
+.portfolio{
+    position: relative;
+    height: calc(100vh - 65px);
+}
+
+.portfolio div{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    border: 4px solid var(--light-green);
+    border-radius: 20px;
+    top: 80px;
+}
+
+.portfolio .title{
+    text-align: center;
+}
+
+.portfolio .p1{
+    left: calc(25% - 150px);
+}
+
+.portfolio .p2{
+    left: calc(50% - 150px);
+}
+
+.portfolio .p3{
+    left: calc(75% - 150px);
+}
+
+.portfolio img{
+    width: 290px;
+}
+
+.portfolio .legenda{
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+}
+
+/* contato */
+footer{
+    position: relative;
+    height: calc(70vh - 65px);
+}
+
+footer .title{
+    color: var(--pink);
+    text-shadow: 1px 1px 7px var(--pink-shadow);
+    text-align: center;
+    font-size: 48px;
+}
+
+footer .text{
+    font-size: 28px;
+    padding: 0 100px 0 100px;
+    text-align: center;
+}
+
+footer button{
+    position: absolute;
+    padding: 8px 40px 8px 40px;
+    font-size: 40px;
+    left: calc(50% - 180px)
+}
+
+/* responsividade */
 @media (max-width: 767px) {
     header .container {
         width: 100%;
@@ -139,33 +305,3 @@ nav ul a {
         font-size: 12px;
     }
 }
-
-h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
-}
-
-.about-me{
-    display: flex;
-    padding: 100px;
-}
-
-.about-me .container{
-    width: 50%;
-    padding-right: 50px;
-}
-
-.about-me .img-container{
-    width: 50%;
-    text-align: center;
-    position: relative;
-}
-
-.about-me .img-container img{
-    width: 70%;
-    height: 100%;
-    border: 10px solid var(--light-green);
-    background-color: #7EB09B;
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.5);
-}
-

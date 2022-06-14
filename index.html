@@ -12,8 +12,8 @@
     <header>
         <div class="container">
             <img src="assets/Logo.png" alt="Logo" class="logo">
-            <h1>Olá, meu nome é Denise</h1>
-            <h2>デニゼ 知恵美 三浦</h2>
+            <p class="title">Olá, meu nome é Denise</p>
+            <p class="japones">デニゼ 知恵美 三浦</p>
             <p>Sou estudante na área de informática há 2 anos e possuo grande interesse em Design. 
                 Já trabalhei com Python, HTML e CSS e possuo experiência em softwares como Canva, Gimp e Figma. 
                 Gosto de aprender coisas novas e de desafios.
@@ -24,7 +24,7 @@
                 <button><i data-feather="instagram"></i>Instagram</button>
             </div>
         </div>
-        <img src="" alt="Foto" class="foto">
+        <img src="assets/photo1.png" alt="Foto" class="foto">
     </header>
 
     <nav>
@@ -33,7 +33,6 @@
             <a href="">Sobre mim</a>
             <a href="">Serviços</a>
             <a href="">Portfólio</a>
-            <a href="">Currículo</a>
             <a href="">Contato</a>
         </ul>
     </nav>
@@ -41,25 +40,73 @@
     <section class="about-me">
         <div class="img-container">
             <img src="assets/photo2.png" alt="Foto">
-            <div class="bloco">
-                <span></span>
-            </div>
         </div>
         <div class="container">
-            <h3>Sobre mim</h3>
+            <p class="title">Sobre mim <i data-feather="user"></i></p>
             <p>
                 Meu nome é Denise Tiemi Miura e sou estudante do último ano no 
                 Instituto Federal do Paraná - Campus Cascavel e estou cursando 
                 Técnico em Informática. Possuo conhecimento iniciante em Python, 
                 HTML e CSS. Além disso, já participei em olimpíadas como IphCo e 
-                Obmep e em eventos na área da robótica.
-                Tenho grande interesse na área de Design e Ilustração e pretendo 
-                me especializar no futuro. Possuo experiência em softwares como Canva,
-                 Gimp e Figma.
-                Sou muito criativa e adoro aprender coisas novas em diversas áreas.  
+                Obmep e em eventos na área da robótica.  
+            </p>
+            <p>
+                Tenho grande interesse nas áreas de Design e Ilustração nas quais pretendo 
+                me especializar no futuro. Possuo experiência em softwares como Canva, Gimp e Figma.
+            </p>
+            <p>
+                Sou muito criativa e adoro aprender coisas novas em diversas áreas.
             </p>
         </div>
     </section>
+
+    <section class="servicos">
+        <p class="title">Serviços</p>
+        <div class="design">
+            <p class="text">
+                Serviços diversos na área de design gráfico e de ilustração digital, 
+                como criação de conteúdo e de layouts e manipulação de imagens
+            </p>
+            <i data-feather="pen-tool"></i>
+        </div>
+        <div class="programa">
+            <p class="text">
+                Desenvolvimento de programas em Python para diferentes funções, 
+                como análise de dados e sistemas de cadastro
+            </p>
+            <i data-feather="code"></i>
+        </div>
+        <div class="sites">
+            <p class="text">
+                Desenvolvimento de sites tanto pessoais quanto profissionais utilizando
+                 HTML, CSS e JavaScript.
+            </p>
+            <i data-feather="wifi"></i>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <p class="title">Portfólio</p>
+        <div class="p1">
+            <img src="assets/portfolio1.png" alt="portfolio1">
+            <p class="legenda">Ilustração digital com manipulação de imagem para livro infantil</p>
+        </div>
+        <div class="p2">
+            <img src="assets/portfolio2.png" alt="portfolio2">
+            <p class="legenda">Programa para controle de biblioteca em Python</p>
+        </div>
+        <div class="p3">
+            <img src="assets/portfolio3.png" alt="portfolio3">
+            <p class="legenda">Página de criação de cadastro em HTML e CSS</p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="title">Vamos trabalhar juntos?</p>
+        <p class="text">Se você gostou do meu trabalho e quer que eu tire a sua ideia do papel e a transforme em realidade, 
+            entre em contato comigo!</p>
+        <button>Entre em contato</button>
+    </footer>
 
     <script>
         feather.replace()
