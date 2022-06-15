@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --pink: #E0218A;
+}
+
+body{
+    background-image: url(glitter.jpg);
+    color: white
+};
+
+h1 {
+    font-family: 'Pacifico', cursive;
+};
